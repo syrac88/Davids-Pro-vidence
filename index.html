@@ -1,13 +1,48 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davids Pro-vidence | Prep is for Noobs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div id="app">
+        <header>
+            <div class="header-container">
+                <button id="lang-btn">DE</button>
+                <h1 id="title">Davids Pro-vidence</h1>
+                <p id="subtitle">Prep is for Noobs - Quick tips for the 'Elite'</p>
+                
+                <nav id="dungeon-nav">
+                    <!-- Buttons werden per JavaScript generiert -->
+                </nav>
+            </div>
+        </header>
+
+        <main class="content-wrapper">
+            <div id="boss-container">
+                <!-- Boss-Karten werden hier eingefügt -->
+            </div>
+        </main>
+
+        <div class="fail-counter-container">
+            <div id="fail-label" class="fail-label">David's 'Pro' Fails</div>
+            <div class="fail-controls">
+                <button onclick="changeFails(-1)">-</button>
+                <span id="fail-count">0</span>
+                <button onclick="changeFails(1)">+</button>
+            </div>
+            <div id="fail-quote" class="fail-quote">"I knew that mechanic."</div>
+        </div>
+
+        <footer>
+            <p id="footer-launch">Launch: March 24 (US) / March 25 (EU)</p>
+            <p>© 2026 WorldOfDuckCraft | For Pros who don't need to read.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
